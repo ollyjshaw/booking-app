@@ -61,8 +61,8 @@ Push the current branch and open a pull request against `main`.
 1. Run **Push** (above).
 2. Use `gh pr create` to open a PR:
    - Title taken from the latest commit subject line.
-   - Body left as a draft for the human to complete, unless a description is
-     provided.
+   - Body is a brief summary of what changed. No test plan, no test checklist,
+     no testing tasks of any kind — that is not this agent's remit.
 3. Report the PR URL.
 
 **Output:** PR URL.
@@ -102,4 +102,5 @@ Return to `main` and pull the latest changes.
 - Never skips pre-commit hooks (`--no-verify` is forbidden).
 - Never force-pushes.
 - Never merges or closes a PR — only opens it.
+- Never adds a test plan, test checklist, or any testing tasks to a PR body.
 - Does not change any file contents — git operations only.
