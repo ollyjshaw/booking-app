@@ -23,6 +23,7 @@ Stage and record current changes on a branch.
 3. Stage all unstaged and untracked files (`git add -A`).
 4. If nothing is staged, report that and stop.
 5. Write a commit message:
+   - Use `git diff --stat HEAD` (not the full diff) to understand what changed.
    - One short subject line (imperative mood, under 72 chars).
    - A `by:` trailer naming the agent that produced the work.
    - Example: `add git wrangler agent\n\nby: git-wrangler`
@@ -61,7 +62,8 @@ Push the current branch and open a pull request against `main`.
 1. Run **Push** (above).
 2. Use `gh pr create` to open a PR:
    - Title taken from the latest commit subject line.
-   - Body is a brief summary of what changed. No test plan, no test checklist,
+   - Body is a brief summary of what changed, derived from `git diff --stat main...HEAD`
+     (not the full diff). No test plan, no test checklist,
      no testing tasks of any kind — that is not this agent's remit.
 3. Report the PR URL.
 

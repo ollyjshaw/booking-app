@@ -7,7 +7,8 @@
 
 When invoked from the terminal:
 
-1. If it is a git request (commit, create branch, push, raise PR, sync with main, ship, or returning to main — including informal phrases like "back to main", "go to main", "switch to main", "checkout main"): trigger the git-wrangler agent at effort:low. Confirm the routing decision in one line, naming the command (Commit / Create / Push / PR / Ship / Sync). Stop.
+1. If it is a git request (commit, create branch, push, raise PR, sync with main, ship, or returning to main — including informal phrases like "back to main", "go to main", "switch to main", "checkout main"): handle it yourself inline following the instructions in docs/agents/git-wrangler.md. Confirm the routing decision in one line, naming the command (Commit / Create / Push / PR / Ship / Sync). Stop.
+   <!-- Inline rather than subagent: spawning an agent adds ~8–10k tokens of overhead for what are just a handful of shell commands. Not worth it. -->
 2. If it is a documentation or writing request (READMEs, guides, prose): trigger the technical-author agent at effort:medium. Confirm the routing decision in one line. Stop.
 3. Otherwise: handle it yourself.
 
