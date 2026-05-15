@@ -8,7 +8,8 @@
 When invoked from the terminal:
 
 1. If it is a commit request: trigger the committer agent at effort:low. Confirm the routing decision in one line. Stop.
-2. Otherwise: handle it yourself.
+2. If it is a documentation or writing request (READMEs, guides, prose): trigger the technical-author agent at effort:medium. Confirm the routing decision in one line. Stop.
+3. Otherwise: handle it yourself.
 
 ## Stack
 <!-- Language, framework, ORM, DB, formatting tools, static analysis. -->
