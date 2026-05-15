@@ -1,8 +1,7 @@
 # Quality Guardian
 
 ## Trigger
-<!-- When does this agent run?
-     Suggest: on a schedule (nightly?) and on every PR (read-only). -->
+<!-- Runs weekly (Monday 2am UTC) via GitHub Actions schedule. -->
 
 ## Remit
 <!-- Broader than just tests. Consider:

@@ -1,13 +1,8 @@
 name: Quality Guardian
 
-# Runs on a schedule and on every PR (read-only, comment only)
-# Adjust the cron schedule to taste
-
 on:
   schedule:
-    - cron: '0 2 * * *'   # nightly at 2am UTC — adjust as needed
-  pull_request:
-    types: [opened, synchronize]
+    - cron: '0 2 * * 1'   # weekly, Monday 2am UTC
 
 jobs:
   quality-guardian:
