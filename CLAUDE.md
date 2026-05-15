@@ -3,6 +3,14 @@
 ## Project
 <!-- What is this project? One or two sentences. -->
 
+## GitHub Actions Routing
+
+When invoked from a GitHub issue or PR comment (triggered by `@claude`):
+
+1. If the comment asks to **spec** the issue (`spec this`, `write a spec`, `spec this out`, etc.): follow docs/agents/spec-writer.md. Stop.
+2. If the comment asks to **implement** the issue (`implement this`, `build this`, etc.): follow docs/agents/feature-implementer.md. Stop.
+3. Otherwise: use your best judgement to help, staying within the repo.
+
 ## CLI Routing
 
 When invoked from the terminal:

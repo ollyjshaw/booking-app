@@ -1,22 +1,24 @@
 # Feature Implementer
 
 ## Trigger
-<!-- What label or event fires this agent?
-     Should only run after Domain Architect and System Architect
-     have both commented and a human has approved the approach. -->
+A comment on a GitHub issue containing `@claude implement` (or `@claude build this`, `@claude implement this`, etc.).
 
 ## Remit
-<!-- Implement the feature as specced. Follow the architects' notes.
-     Nothing more, nothing less. -->
+Read the spec in `docs/specs/` for this issue and implement it. Nothing more, nothing less.
 
 ## Process
-<!-- Step by step what it does, in order. -->
+1. Find the spec at `docs/specs/<issue-number>-*.md`. If it does not exist, comment on the issue and stop.
+2. Read the spec in full before writing any code.
+3. Check `docs/domain/ubiquitous-language.md` — use the correct terms in all identifiers.
+4. Implement the feature as described. Follow the project stack (see CLAUDE.md).
+5. Write tests. CI must pass before the PR is marked ready.
+6. Open a PR from a new branch, referencing the issue and spec. PR body: `Implements #<issue-number>.`
 
 ## Output
-<!-- A PR referencing the issue. Tests included. CI must pass. -->
+A PR implementing the spec, with tests included.
 
 ## Hard Constraints
-<!-- What is it absolutely forbidden from doing?
-     E.g. does not freelance beyond the spec,
-     does not implement anything not agreed by the architects,
-     if it disagrees with the approach it comments and stops. -->
+- Does not implement anything not described in the spec.
+- If the spec is ambiguous or missing, comments on the issue explaining what is unclear and stops.
+- Does not modify the spec file.
+- PR body contains no test plan or test checklist.
