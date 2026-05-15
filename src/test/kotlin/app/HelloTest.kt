@@ -3,11 +3,9 @@ package app
 import io.javalin.testtools.JavalinTest
 import kotlin.test.Test
 import kotlin.test.assertEquals
-import kotlin.test.assertNotNull
 import kotlin.test.assertTrue
 
 class HelloTest {
-
     @Test
     fun `GET hello returns 200 with plain text Hello World`() {
         JavalinTest.test(createApp()) { _, client ->

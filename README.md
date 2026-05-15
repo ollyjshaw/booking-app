@@ -22,10 +22,12 @@ See [docs/agents/README.md](docs/agents/README.md) for how it works.
 **Prerequisites:** Java 17+
 
 ```bash
-make build   # compile the project
-make test    # compile and run the test suite
-make run     # start the app locally on port 7070
-make clean   # delete build outputs
+make build    # compile the project
+make test     # compile and run the test suite
+make lint     # check formatting (ktlint)
+make format   # auto-fix formatting issues
+make run      # start the app locally on port 7070
+make clean    # delete build outputs
 ```
 
 ## AI Involvement
