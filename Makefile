@@ -1,4 +1,6 @@
-.PHONY: build test lint format run clean
+.PHONY: all build test lint format run clean check-updates
+
+all: build test lint
 
 build:
 	./gradlew assemble
@@ -17,3 +19,6 @@ run:
 
 clean:
 	./gradlew clean
+
+check-updates:
+	./gradlew dependencyUpdates
