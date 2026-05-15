@@ -9,8 +9,10 @@ When invoked from the terminal:
 
 1. If it is a git request (commit, create branch, push, raise PR, sync with main, ship, or returning to main — including informal phrases like "back to main", "go to main", "switch to main", "checkout main"): handle it yourself inline following the instructions in docs/agents/git-wrangler.md. Confirm the routing decision in one line, naming the command (Commit / Create / Push / PR / Ship / Sync). Stop.
    <!-- Inline rather than subagent: spawning an agent adds ~8–10k tokens of overhead for what are just a handful of shell commands. Not worth it. -->
-2. If it is a documentation or writing request (READMEs, guides, prose): trigger the technical-author agent at effort:medium. Confirm the routing decision in one line. Stop.
-3. Otherwise: handle it yourself.
+2. If it is an architectural request (design discussion, ADR, system trade-offs, structure, operability, rollback, or anything that sounds like "how should we build/structure/design X"): handle it yourself inline following the instructions in docs/agents/architect-system.md, CLI route. Confirm the routing decision in one line. Stop.
+   <!-- Inline rather than subagent: the CLI route is conversational — a subagent would lose the thread immediately. -->
+3. If it is a documentation or writing request (READMEs, guides, prose): trigger the technical-author agent at effort:medium. Confirm the routing decision in one line. Stop.
+4. Otherwise: handle it yourself.
 
 ## Stack
 <!-- Language, framework, ORM, DB, formatting tools, static analysis. -->
