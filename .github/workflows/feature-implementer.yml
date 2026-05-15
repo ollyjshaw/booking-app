@@ -1,0 +1,19 @@
+name: Feature Implementer
+
+# Triggers when an issue is labelled 'implement'
+# Should only run after Domain Architect and System Architect
+# have both commented and a human has approved the approach.
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  feature-implementer:
+    if: github.event.label.name == 'implement'
+    runs-on: ubuntu-latest
+    steps:
+      # Read docs/agents/feature-implementer.md for the full remit
+      # and constraints before configuring this workflow.
+      - name: Placeholder
+        run: echo "Feature Implementer workflow — not yet configured"

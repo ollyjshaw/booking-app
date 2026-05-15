@@ -1,0 +1,18 @@
+name: Bug Fixer
+
+# Triggers when an issue is labelled 'bug'
+# Fill in the Claude Code GitHub Action details once confirmed
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  bug-fixer:
+    if: github.event.label.name == 'bug'
+    runs-on: ubuntu-latest
+    steps:
+      # Read docs/agents/bug-fixer.md for the full remit and constraints
+      # before configuring this workflow.
+      - name: Placeholder
+        run: echo "Bug Fixer workflow — not yet configured"
