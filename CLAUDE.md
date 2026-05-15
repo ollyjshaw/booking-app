@@ -7,7 +7,7 @@
 
 When invoked from the terminal:
 
-1. If it is a commit request: trigger the committer agent at effort:low. Confirm the routing decision in one line. Stop.
+1. If it is a git request (commit, create branch, push, raise PR, sync with main, or ship): trigger the git-wrangler agent at effort:low. Confirm the routing decision in one line, naming the command (Commit / Create / Push / PR / Ship / Sync). Stop.
 2. If it is a documentation or writing request (READMEs, guides, prose): trigger the technical-author agent at effort:medium. Confirm the routing decision in one line. Stop.
 3. Otherwise: handle it yourself.
 
