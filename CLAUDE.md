@@ -24,6 +24,7 @@ Web framework: Javalin 7.2.2 (Java, Jetty 12). Full API reference is imported be
 <!-- Rules every agent must follow without exception.
      Example: all times in UTC, every endpoint has an integration test,
      no PR merges with failing tests, do not touch unrelated code. -->
+- **PR bodies never contain a test plan, test checklist, or any testing tasks.** This applies regardless of which agent raises the PR and regardless of what PR template you might otherwise default to.
 
 ## Agents
 <!-- Brief pointer to docs/agents/ — do not duplicate instructions here. -->
