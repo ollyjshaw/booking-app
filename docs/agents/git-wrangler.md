@@ -76,10 +76,11 @@ Create a branch, commit all changes, push, and open a PR in one step.
 Use this when work is ready and you want to go from local changes to an open
 PR without running each command separately.
 
-1. If already on a feature branch with commits ahead of `main`, skip to step 3.
-2. Run **Create** to cut a new branch from an up-to-date `main`.
-3. Run **Commit** to stage and record all current changes.
-4. Run **PR** to push the branch and open a pull request against `main`.
+1. If already on a feature branch with commits ahead of `main`, skip to step 4.
+2. `git stash` any uncommitted changes (there will always be some — that is the point).
+3. Run **Create** to pull `main` and cut a new branch, then `git stash pop` to restore the changes.
+4. Run **Commit** to stage and record all current changes.
+5. Run **PR** to push the branch and open a pull request against `main`.
 
 **Output:** Branch name, commit SHA, and PR URL.
 
