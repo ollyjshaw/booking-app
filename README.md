@@ -19,7 +19,14 @@ See [docs/agents/README.md](docs/agents/README.md) for how it works.
 
 ## Getting Started
 
-<!-- How to run locally. Fill this in once the stack is decided. -->
+**Prerequisites:** Java 17+
+
+```bash
+make build   # compile the project
+make test    # compile and run the test suite
+make run     # start the app locally on port 7070
+make clean   # delete build outputs
+```
 
 ## AI Involvement
 
