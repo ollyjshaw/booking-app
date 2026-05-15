@@ -1,6 +1,16 @@
-# [Project Name]
+# booking_app
 
-<!-- One paragraph: what this is and who it's for. -->
+A booking system for professionals — tutors, coaches, instructors, that kind of thing — to offer lesson slots that their students can browse and book. The goal is simple: make it easy for a solo practitioner to manage their availability and for students to get on the calendar without a back-and-forth.
+
+Full technical docs (stack, setup, architecture) are coming once there's actually code to document.
+
+## What this project is really about
+
+The booking system is the vehicle, not the destination.
+
+This project exists to explore agentic development: what does it actually look like to build software using AI agents as first-class contributors? That means experimenting with multi-agent workflows, figuring out where agents help and where they get in the way, and building up a sense of what "agentic development" means in practice — not in theory.
+
+The code will be real and the product will be functional, but the main thing being tested here is the process.
 
 ## Agentic Workflow
 
