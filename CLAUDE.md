@@ -16,6 +16,9 @@ When invoked from the terminal:
 
 ## Stack
 <!-- Language, framework, ORM, DB, formatting tools, static analysis. -->
+Web framework: Javalin 7.2.2 (Java, Jetty 12). Full API reference is imported below and is always in context — read it before writing any route, handler, or test.
+
+@docs/frameworks/javalin.md
 
 ## Non-negotiables
 <!-- Rules every agent must follow without exception.
